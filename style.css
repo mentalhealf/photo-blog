@@ -1,0 +1,66 @@
+:root {
+    --header-accent-color: #03A9F4;
+    --gray-header-color: #7D7D7D;
+    --span-title-color: #B4AD9E;
+    --card-title-color: #626262;
+}
+
+.header_list {
+    list-style: none;
+
+}
+
+.header_item {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.header_link_active {
+    text-decoration: none;
+    color: var(--header-accent-color);
+}
+
+.header_link {
+    color: var(--gray-header-color);
+    text-decoration: none;
+}
+
+.span_title {
+    color: var(--span-title-color);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.title_card {
+    color: var(--card-title-color);
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.pharograph_description {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: left;
+    color: var(--card-title-color);
+}
+
+.card_item {
+    list-style-type: none;
+}
+
+.load_btn {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: left;
+    color: var(--card-title-color);
+
+}
