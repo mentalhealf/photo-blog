@@ -1,12 +1,28 @@
 :root {
     --header-accent-color: #03A9F4;
-    --gray-header-color: #7D7D7D;
-    --span-title-color: #B4AD9E;
-    --card-title-color: #626262;
+    --grey_header_color: #7D7D7D;
+    --span_title_color: #B4AD9E;
+    --common_txt_color: #626262;
+}
+
+.container {
+    width: 906px;
+    outline: solid var(--grey_header_color);
+    margin: 0 auto;
+}
+
+.header_link {
+    text-decoration: none;
+    color: var(--grey_header_color);
+
 }
 
 .header_list {
     list-style: none;
+    display: flex;
+    width: 555px;
+    outline: 2px solid var(--grey_header_color);
+    margin: auto;
 
 }
 
@@ -16,51 +32,68 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin: 0 99px 0 0;
 }
 
-.header_link_active {
-    text-decoration: none;
+.active {
     color: var(--header-accent-color);
 }
 
-.header_link {
-    color: var(--gray-header-color);
-    text-decoration: none;
+.span_title {
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--span_title_color);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
 }
 
-.span_title {
-    color: var(--span-title-color);
-    font-family: 'Ubuntu', sans-serif;
+.header {
+    margin: 71px 0 92px 0;
+}
+
+
+.content_list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-left: 0;
+}
+
+.card-item {
+    width: 420px;
+    height: 546px;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .title_card {
-    color: var(--card-title-color);
-    font-family: 'Playfair Display', sans-serif;
+    color: var(--common_txt_color);
+    font-family: 'Playfair Display', serif;
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 
-.pharograph_description {
+.txt_par {
+    color: var(--common_txt_color);
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.load_button {
     font-family: 'Playfair Display', serif;
     font-size: 14px;
     font-weight: 400;
-    line-height: 19px;
-    text-align: left;
-    color: var(--card-title-color);
-}
-
-.card_item {
-    list-style-type: none;
-}
-
-.load_btn {
-    font-family: 'Playfair Display', serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 19px;
-    text-align: left;
-    color: var(--card-title-color);
-
+    line-height: 35px;
+    display: block;
+    margin: 0 auto;
+    padding: 20px 48px 21px 49px;
+    border: 1px solid var(--common_txt_color);
+    background-color: white;
 }
