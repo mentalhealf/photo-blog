@@ -1,111 +1,244 @@
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS-Basic</title>
+    <link rel="stylesheet" href="style.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CSS-Basic</title>
-  <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com/" />
-  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com/" />
-  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet" />
-</head>
-
-<body>
-  <div class="container">
-    <header class="container header vibrate-1">
-      <nav>
-        <ul class="header_list vibrate-1">
-          <li class="header_item">
-            <a href="#" class="header_link active text-pop">LIFESTYLE</a>
+  <body>
+    <div class="container">
+      <header class="container header vibrate-1">
+        <nav>
+          <ul class="header_list vibrate-1">
+            <li class="header_item">
+              <a href="#" class="header_link active text-pop">LIFESTYLE</a>
+            </li>
+            <li class="header_item">
+              <a href="#" class="header_link text-pop">PHOTODIARY</a>
+            </li>
+            <li class="header_item">
+              <a href="#" class="header_link text-pop">MUSIC</a>
+            </li>
+            <li class="header_item">
+              <a href="#" class="header_link text-pop">TRAVEL</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="container main">
+        <ul class="content_list">
+          <li class="card-item">
+            <picture>
+              <source
+                srcset="./photos/Party@1x.jpg 1x, ./photos/Party@2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./photos/Party@1x.jpg 1x, ./photos/Party@2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./photos/Party@1x.jpg 1x, ./photos/Party@2x.jpg 2x"
+                media="(max-width: 480px)"
+              />
+              <img
+                class="portfolio-photo"
+                width="420"
+                height="280"
+                src="./photos/Party@1x.jpg"
+                alt="Partyy"
+              />
+            </picture>
+            <img
+              class="pop"
+              width="420"
+              height="280"
+              src="Party@1x.jpg"
+              alt="Festival Photo"
+            />
+            <br /><span class="span_title">LIFESTYLE</span>
+            <h3 class="title_card">More Than Just A Music Fest</h3>
+            <p class="txt_par">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea.
+            </p>
           </li>
-          <li class="header_item">
-            <a href="#" class="header_link text-pop">PHOTODIARY</a>
+          <li class="card-item">
+            <picture>
+              <source
+                srcset="./photos/Cup@1x.jpg 1x, ./photos/Cup@2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./photos/Cup@1x.jpg 1x, ./photos/Cup@2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./photos/Cup@1x.jpg 1x, ./photos/Cup@2x.jpg 2x"
+                media="(max-width: 480px)"
+              />
+              <img
+                class="portfolio-photo"
+                width="420"
+                height="280"
+                src="./photos/Cup@1x.jpg"
+                alt="limee"
+              />
+            <br /><span class="span_title">LIFESTYLE</span>
+            <h3 class="title_card">Life tastes better with coffee</h3>
+            <p class="txt_par">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea.
+            </p>
           </li>
-          <li class="header_item">
-            <a href="#" class="header_link text-pop">MUSIC</a>
+          <li class="card-item">
+            <picture>
+              <source
+                srcset="
+                  ./photos/american-dream@1x.jpg 1x,
+                  ./photos/american-dream@2x.jpg 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./photos/american-dream@1x.jpg 1x, ./photos/american-dream@2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./photos/american-dream@1x.jpg 1x, ./photos/american-dream@2x.jpg 2x"
+                media="(max-width: 480px)"
+              />
+              <img
+                class="portfolio-photo"
+                width="420"
+                height="280"
+                src="./photos/american-dream@1x.jpg"
+                alt="Road in the Winter Photo"
+              />
+            </picture>
+            <br /><span class="span_title">PHOTODIARY</span>
+            <h3 class="title_card">American dream</h3>
+            <p class="txt_par">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea.
+            </p>
           </li>
-          <li class="header_item">
-            <a href="#" class="header_link text-pop">TRAVEL</a>
+          <li class="card-item">
+            <picture>
+              <source
+                srcset="./photos/mountain-day@1x.jpg 1x, ./photos/mountain-day@2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./photos/mountain-day@1x.jpg 1x, ./photos/mountain-day@2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./photos/mountain-day@1x.jpg 1x, ./photos/mountain-day@2x.jpg 2x"
+                media="(max-width: 480px)"
+              />
+              <img
+                class="portfolio-photo"
+                width="420"
+                height="280"
+                src="./photos/mountain-day@1x.jpg"
+                alt="Road in the Winter Photo"
+              />
+            </picture>
+            <br /><span class="span_title">PHOTODIARY</span>
+            <h3 class="title_card">A day exploring the Alps</h3>
+            <p class="txt_par">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea.
+            </p>
+          </li>
+          <li class="card-item">
+            <picture>
+              <source
+                srcset="./photos/winter-road@1x.jpg 1x, ./photos/road@2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./photos/winter-road@1x.jpg 1x, ./photos/road@2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./photos/winter-road@1x.jpg 1x, ./photos/road@2x.jpg 2x"
+                media="(max-width: 480px)"
+              />
+              <img
+                class="portfolio-photo"
+                width="420"
+                height="280"
+                src="./photos/winter-road@1x.jpg"
+                alt="Road in the Winter Photo"
+              />
+            </picture>
+            <br /><span class="span_title">LIFESTYLE</span>
+            <h3 class="title_card">Top 10 song for running</h3>
+            <p class="txt_par">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea.
+            </p>
+          </li>
+          <li class="card-item">
+            <picture>
+              <source
+                srcset="./photos/winter-road@1x.jpg 1x, ./photos/road@2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="./photos/winter-road@1x.jpg 1x, ./photos/road@2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./photos/winter-road@1x.jpg 1x, ./photos/road@2x.jpg 2x"
+                media="(max-width: 480px)"
+              />
+              <img
+                class="portfolio-photo"
+                width="420"
+                height="280"
+                src="./photos/winter-road@1x.jpg"
+                alt="Road in the Winter Photo"
+              />
+            </picture>
+            <br /><span class="span_title">LIFESTYLE</span>
+            <h3 class="title_card">Cold winter days</h3>
+            <p class="txt_par">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea.
+            </p>
           </li>
         </ul>
-      </nav>
-    </header>
-    <main class="container main">
-      <ul class="content_list">
-        <li class="card-item">
-          <img class="pop" width="420" height="280" src="qwe1.png" alt="Festival Photo" />
-          <br /><span class="span_title">LIFESTYLE</span>
-          <h3 class="title_card">More Than Just A Music Fest</h3>
-          <p class="txt_par">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-            enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea.
-          </p>
-        </li>
-        <li class="card-item">
-          <img class="pop" width="420" height="280" src="qwe3.png" alt="Coffee Photo" />
-          <br /><span class="span_title">LIFESTYLE</span>
-          <h3 class="title_card">Life tastes better with coffee</h3>
-          <p class="txt_par">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-            enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea.
-          </p>
-        </li>
-        <li class="card-item">
-          <img class="pop" width="420" height="280" src="qwe5.png" alt="San Fransisco Bridge Photo" />
-          <br /><span class="span_title">PHOTODIARY</span>
-          <h3 class="title_card">American dream</h3>
-          <p class="txt_par">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-            enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea.
-          </p>
-        </li>
-        <li class="card-item">
-          <img class="pop" width="420" height="280" src="qwe6.png" alt="American Alps Photo" />
-          <br /><span class="span_title">PHOTODIARY</span>
-          <h3 class="title_card">A day exploring the Alps</h3>
-          <p class="txt_par">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-            enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea.
-          </p>
-        </li>
-        <li class="card-item">
-          <img class="pop" width="420" height="280" src="qwe2.png" alt="Road in a desert" />
-          <br /><span class="span_title">LIFESTYLE</span>
-          <h3 class="title_card">Top 10 song for running</h3>
-          <p class="txt_par">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-            enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea.
-          </p>
-        </li>
-        <li class="card-item">
-          <img class="pop" width="420" height="280" src="qwe4.png" alt="Road in the Winter" />
-          <br /><span class="span_title">LIFESTYLE</span>
-          <h3 class="title_card">Cold winter days</h3>
-          <p class="txt_par">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-            enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea.
-          </p>
-        </li>
-      </ul>
-    </main>
-    <button class="load_button">Load More</button>
-  </div>
-</body>
-
+      </main>
+      <button class="load_button">Load More</button>
+    </div>
+  </body>
 </html>
